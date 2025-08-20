@@ -1,0 +1,27 @@
+<html>
+<body>
+<script>
+let numCheck = 6;
+let prime = true;
+if (num <= 1) prime = false;
+for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+        prime = false;
+        break;
+    }
+}
+
+
+let sum= 0;
+for (let i = 1; i < num; i++) {
+    if (num % i === 0) sum += i;
+}
+let perfect = sum === num;
+
+if (prime) console.log(num, "is Prime");
+else if (perfect) console.log(num, "is Perfect");
+else console.log(num, "is Composite");
+</script>
+</body>
+</html>
+
