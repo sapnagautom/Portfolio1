@@ -1,0 +1,20 @@
+<html>
+<body>
+<script>
+let a =parseInt(prompt("enter  number 1"));
+let b =parseInt(prompt("enter number 2"));
+var x =a>b ? b:a;
+var y;
+for(let i=1;i<=a; i++)
+{
+if((a %i==0) &&( b % i==0))
+{
+y=i;
+}
+}
+var lcm=(a *b) /y;
+    document.write(y);
+
+</script>
+</body>
+</html>
